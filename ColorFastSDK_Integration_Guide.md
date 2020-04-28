@@ -37,11 +37,11 @@
 
 ## <a name="introduction">Introduction</a>
 
-- ColorFast SDK supports Banner, Interstitial, Native, Native Video and Rewarded Video.
+- ColorFast SDK supports Banner, Interstitial, Rewarded Video.
 - ColorFast Android SDK supports Android API 15+.
 - Please make sure you have added an app and at least one ad slot in ColorFast Platform.
 
-## <a name="integration">2.Integration ColoColorFastrFast SDK</a>  
+## <a name="integration">2.Integration ColorFast SDK</a>  
 
 ### <a name="step1">2.1 Integrating the ColorFast SDK in to project</a>
 
