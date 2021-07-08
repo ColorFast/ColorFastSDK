@@ -45,7 +45,9 @@
 
 ## <a name="privacy">2.Privacy Policy</a>  
 If your apps are published at Google Play, you should add statements below.
+```
 We may get APP installation list for advertising, but do not upload list information directly, using hash algorithm - bloom filter instead.
+```
 
 ## <a name="integration">3.Integration ColorFast SDK</a>  
 
