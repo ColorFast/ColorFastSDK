@@ -2,38 +2,40 @@
 
 1. [Introduction](#introduction)
 
-2. [Integration ColorFast SDK](#integration)
+2. [Privacy Policy](#privacy)
 
-    [2.1 Integrating the ColorFast SDK in to project](#step1)
+3. [Integration ColorFast SDK](#integration)
 
-    [2.2 Initialize the ColorFast SDK](#step2)
+    [3.1 Integrating the ColorFast SDK in to project](#step1)
 
-    [2.3 GDPR](#step3)
+    [3.2 Initialize the ColorFast SDK](#step2)
+
+    [3.3 GDPR](#step3)
     
-    [2.4 Child Oriented Settings](#step4)
+    [3.4 Child Oriented Settings](#step4)
 
-    [2.5 Android code obfuscation](#step5)
+    [3.5 Android code obfuscation](#step5)
     
-3. [Integration Notes](#note)
+4. [Integration Notes](#note)
 
-4. [Request Ad](#request)
+5. [Request Ad](#request)
 
-    [4.1 Native](#native)
+    [5.1 Native](#native)
     * [Element-Native](#common)
     * [Element-Native with adCache](#cache)
     * [Element-Native for Multiple](#multi)
     
-    [4.2 Banner](#banner)
+    [5.2 Banner](#banner)
     
-    [4.3 Interstitial](#interstitial)
+    [5.3 Interstitial](#interstitial)
     
-    [4.4 Appwall](#appwall)
+    [5.4 Appwall](#appwall)
     
-    [4.5 Rewarded Video](#reward)
+    [5.5 Rewarded Video](#reward)
     
-    [4.6 Native Video](#native_video)
+    [5.6 Native Video](#native_video)
     
-5. [Error Code For SDK](#error)
+6. [Error Code For SDK](#error)
 
 ## <a name="introduction">Introduction</a>
 
@@ -41,9 +43,11 @@
 - ColorFast Android SDK supports Android API 15+.
 - Please make sure you have added an app and at least one ad slot in ColorFast Platform.
 
-## <a name="integration">2.Integration ColorFast SDK</a>  
+## <a name="privacy">2.Privacy Policy</a>  
 
-### <a name="step1">2.1 Integrating the ColorFast SDK in to project</a>
+## <a name="integration">3.Integration ColorFast SDK</a>  
+
+### <a name="step1">3.1 Integrating the ColorFast SDK in to project</a>
 
 * Check SDK in the rar.
 
@@ -91,7 +95,7 @@
 
 
 
-## <a name="step2">2.2 Initialization</a>  
+## <a name="step2">3.2 Initialization</a>  
 
 > Init the SDK in your Application as detailed below: 
 
@@ -107,7 +111,7 @@
     ColorFastSDK.setSchema(true);
 ```
 
-## <a name="step3">2.3 GDPR</a>  
+## <a name="step3">3.3 GDPR</a>  
 
 **Use this interface to upload consent from affected users for GDPR**
 
@@ -133,7 +137,7 @@ Warning:
 1. If SDK don't gather the user informatian ,you probably get no fill. 
 2. It is recommended that obtaining the user's consent before SDK initialization. 
 
-## <a name="step4">2.4 Child Oriented Settings</a>  
+## <a name="step4">3.4 Child Oriented Settings</a>  
 In order to comply with the provisions of the Children's Online Privacy Protection Act (COPPA), we provide the setIsChildDirected interface.
 
 Developers can use this interface to indicate that your content is child-oriented. We will stop personalized advertising and put in advertisements suitable for children，which may result in no filling.
@@ -145,7 +149,7 @@ Developers can use this interface to indicate that your content is child-oriente
 Warning:
 1. It is recommended to call this interface before requesting advertisements.
 
-## <a name="step5">2.5 Obfuscation Configuration</a> 
+## <a name="step5">3.5 Obfuscation Configuration</a> 
 > If it needs to obfuscate the codes in building the project process, you should add the following codes into the proguard file:
 
 ``` java
@@ -164,7 +168,7 @@ Warning:
 ```
 
 
-## <a name="note">3.Integration Notes</a>
+## <a name="note">4.Integration Notes</a>
 
 ​	If you live in a country, such as China, which is forbidden google play, two prerequisites to get ColorFast ads: 
 > * GooglePlay has installed on your device.
@@ -206,9 +210,9 @@ public class MyCTAdEventListener extends AdEventListener {
     }
 }
 ```
-## <a name="request">4.Request Ad</a>
+## <a name="request">5.Request Ad</a>
 
-## <a name="native">4.1 Native Ads Integration</a>
+## <a name="native">5.1 Native Ads Integration</a>
 
 ### <a name="common">Native ads interface</a>
 
@@ -357,7 +361,7 @@ public class MyCTAdEventListener extends AdEventListener {
 
 
 
-## <a name="banner">4.2 Banner Ad Integration</a>
+## <a name="banner">5.2 Banner Ad Integration</a>
 
 > The method to load Banner Ad:
 
@@ -414,7 +418,7 @@ public class MyCTAdEventListener extends AdEventListener {
 
 
 
-## <a name="interstitial">4.3 Interstitial Ads Integration</a>
+## <a name="interstitial">5.3 Interstitial Ads Integration</a>
 
 > Configure the AndroidManifest.xml for Interstitial
 
@@ -472,7 +476,7 @@ public class MyCTAdEventListener extends AdEventListener {
 
 
 
-## <a name="appwall">4.4 Appwall integration</a>
+## <a name="appwall">5.4 Appwall integration</a>
 
 > Configure the module's build.gradle for Appwall：
 
@@ -520,7 +524,7 @@ public class MyCTAdEventListener extends AdEventListener {
 
 
 
-## <a name="reward">4.5 Rewarded Video Ad Integration</a>
+## <a name="reward">5.5 Rewarded Video Ad Integration</a>
 
 > **Google Play Services**
 
@@ -655,7 +659,7 @@ public void videoRewarded(String rewardName, String rewardAmount) {
 ![image](https://user-images.githubusercontent.com/20314643/42371626-94e8e6a2-8142-11e8-9598-eb75de753070.png)
 
 
-## <a name="native_video">4.6 Native Video Ad Integration</a>
+## <a name="native_video">5.6 Native Video Ad Integration</a>
 
 > Configure the module's build.gradle for Native Video：
 
