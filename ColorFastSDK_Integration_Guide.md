@@ -148,7 +148,7 @@ Developers can use this interface to indicate that your content is child-oriente
 
 ``` java
      //child-oriented
-     ColorFastSDK.setIsChildDirected(this, true);
+     ColorFastSDK.setIsChildDirected(this, false);
 ```
 Warning:
 1. It is recommended to call this interface before requesting advertisements.
